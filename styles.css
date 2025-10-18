@@ -1,0 +1,452 @@
+/*
+ * Main stylesheet for TechBitz.io
+ * Designed with responsive best practices in mind to deliver
+ * a cohesive experience across devices.
+ */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn-primary {
+    background-color: #0077ff;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #005fcc;
+    color: #fff;
+}
+.btn-secondary {
+    background-color: #e7e7e7;
+    color: #333;
+}
+.btn-secondary:hover {
+    background-color: #d4d4d4;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077ff;
+}
+.logo span {
+    color: #ff6600;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-list a {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list .active {
+    color: #0077ff;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 24px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+.hamburger::before {
+    top: -8px;
+}
+.hamburger::after {
+    top: 8px;
+}
+
+/* Hamburger animation when open */
+.nav-toggle.open .hamburger {
+    background-color: transparent;
+}
+.nav-toggle.open .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.open .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(to right, #0077ff, #00aaff);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Features section */
+.features {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.feature-item {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #0077ff;
+}
+.feature-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Services preview */
+.services-preview {
+    padding: 4rem 0;
+    background-color: #f7f7f7;
+}
+.services-preview h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.service-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.service-card h3 {
+    margin-bottom: 0.5rem;
+}
+.service-card p {
+    margin-bottom: 1rem;
+}
+
+/* Blog preview */
+.blog-preview {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.blog-preview h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.blog-preview .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.blog-card {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.blog-card h3 {
+    margin-bottom: 0.5rem;
+}
+.blog-card .date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* CTA section */
+.cta {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+.cta-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.cta-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer-links a {
+    color: #aaa;
+}
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Page header */
+.page-header {
+    background-color: #0077ff;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+.page-header p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About page styles */
+.about-section {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+.about-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.values-list {
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+.values-list li {
+    margin-bottom: 0.75rem;
+}
+
+/* Services page styles */
+.service-section {
+    padding: 3rem 0;
+}
+.service-section.alt-bg {
+    background-color: #f7f7f7;
+}
+.service-section h2 {
+    margin-bottom: 1rem;
+}
+.service-section h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.service-section ul {
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+.service-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact page styles */
+.contact-section {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact-form {
+    flex: 1 1 300px;
+}
+.contact-info {
+    flex: 1 1 300px;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-response {
+    margin-top: 0.5rem;
+    color: #0077ff;
+    font-weight: 600;
+}
+
+/* Blog page styles */
+.blog-section {
+    padding: 2rem 0;
+}
+.blog-post {
+    margin-bottom: 3rem;
+}
+.blog-post h2 {
+    margin-bottom: 0.25rem;
+}
+.post-meta {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        min-width: 200px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        padding: 1rem 0;
+    }
+    .nav-list.show {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-list li {
+        margin: 0;
+        padding: 0.5rem 1.5rem;
+    }
+    .nav-list li a {
+        display: block;
+        width: 100%;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .features-grid,
+    .services-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}

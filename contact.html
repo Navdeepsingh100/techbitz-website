@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – TechBitz.io</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header and navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">TechBitz<span>.io</span></a>
+            <nav id="main-nav" class="nav">
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-container">
+                <form id="contact-form" class="contact-form" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p id="form-response" class="form-response" aria-live="polite"></p>
+                </form>
+                <div class="contact-info">
+                    <h2>Reach Us</h2>
+                    <p><strong>Email:</strong> contact@techbitz.io</p>
+                    <p><strong>Location:</strong> Ann Arbor, Michigan, USA</p>
+                    <p>We respond to all queries within 24–48 hours.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 TechBitz.io. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handling: simulate sending a message and show a confirmation message without refreshing the page
+        function handleSubmit(event) {
+            event.preventDefault();
+            const responseEl = document.getElementById('form-response');
+            responseEl.textContent = 'Thank you for reaching out! We will contact you soon.';
+            event.target.reset();
+            return false;
+        }
+    </script>
+</body>
+</html>
