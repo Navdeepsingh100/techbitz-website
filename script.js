@@ -14,4 +14,26 @@ document.addEventListener('DOMContentLoaded', function () {
             navToggle.classList.toggle('open');
         });
     }
+
+    // Hero slider functionality
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        const showSlide = (index) => {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        };
+        const nextSlide = () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        };
+        showSlide(0);
+        // Cycle slides every 6 seconds
+        setInterval(nextSlide, 6000);
+    }
 });
