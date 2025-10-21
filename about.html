@@ -3,67 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – TechBitz.io</title>
+    <title>TechBitz.io – About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header and navigation -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">TechBitz<span>.io</span></a>
-            <nav id="main-nav" class="nav">
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-list">
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">TechBitz.io</a>
+            <nav id="nav">
+                <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html#process">Process</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     </header>
-
-    <main>
-        <section class="page-header">
+    <main class="page-main">
+        <section class="page-hero">
             <div class="container">
-                <h1>About TechBitz.io</h1>
-                <p>Learn more about our mission, values and the team behind TechBitz.io.</p>
+                <h1>About Us</h1>
+                <p>Get to know TechBitz.io – our mission, values and what drives us.</p>
             </div>
         </section>
-
         <section class="about-section">
             <div class="container">
-                <h2>Our Story</h2>
-                <p>TechBitz.io was founded with a simple mission: to empower businesses through innovative technology solutions. We bring together a team of experienced developers, designers and automation experts to build digital products that are both beautiful and functional.</p>
-                <p>With years of collective experience, our team has delivered projects across various industries, from startups to enterprise clients. Our goal is to deliver solutions that drive growth, enhance customer engagement and improve operational efficiency.</p>
-                <h2>Our Values</h2>
-                <ul class="values-list">
-                    <li><strong>Innovation:</strong> We stay at the forefront of technology trends to deliver cutting‑edge solutions.</li>
-                    <li><strong>Collaboration:</strong> We work closely with our clients, treating every project as a partnership.</li>
-                    <li><strong>Integrity:</strong> We believe in transparency, honesty and doing what's right for our clients.</li>
-                    <li><strong>Excellence:</strong> We hold ourselves to high standards to ensure quality in every project.</li>
-                </ul>
-                <h2>Meet the Team</h2>
-                <p>Our diverse team consists of developers, designers and consultants. Each member brings unique skills and perspectives, which allows us to tackle complex problems and deliver comprehensive solutions.</p>
+                <h2>Our Mission and Values</h2>
+                <p>TechBitz.io was founded in 2020 with a simple mission: to deliver reliable, high‑quality tech solutions globally, while retaining the agility and personal dedication of a freelance service. Our team consists of experienced professionals who have honed their skills on diverse projects – from developing complex software systems to managing product lifecycles.</p>
+                <p>We believe in professionalism and approachability: we communicate clearly, meet our commitments, and treat your business goals as our own. Our global mindset means we are comfortable working across cultures and time zones, ensuring that distance is never a barrier to an effective partnership.</p>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <h2>Experience, Expertise & Global Mindset</h2>
+                <p>With years of hands‑on experience in programming, quality assurance, cloud infrastructure and agile project management, we bring a wealth of knowledge to the table. We’ve guided early‑stage startups in refining their ideas and helped established companies accelerate their technology projects.</p>
+                <p>As freelancing becomes a mainstream strategy for businesses – around 70&nbsp;% of U.S. small and medium businesses hire freelancers at least occasionally – TechBitz.io stands out by offering the best of both worlds: the flexibility and cost‑effectiveness of independent talent combined with the reliability and rigor of a professional tech consulting firm.</p>
+                <p>Our global outlook is key to our identity – having served clients in the United States, Europe and beyond, we adapt to your region’s business norms and schedule. This global perspective, coupled with fluency in English and a keen awareness of different market needs, allows us to collaborate smoothly with clients around the world.</p>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <h2>Your Success is Our Success</h2>
+                <p>At TechBitz.io, we measure our success by your satisfaction. Whether it’s a short‑term assignment or a long‑term engagement, we approach each project with a client‑first mentality. Our product‑oriented approach (backed by strong project management practices) ensures that we not only deliver on specifications but also provide insights and suggestions to add value to your product.</p>
+                <p>We are passionate about technology and innovation, but above all, we are passionate about helping your business succeed. When you work with TechBitz.io, you gain a dedicated remote team that is professional, trustworthy and committed to turning your tech vision into reality.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Collaborate?</h2>
+                <p>Contact us today to learn how TechBitz.io can help your business thrive.</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer>
-        <div class="container footer-content">
+        <div class="container">
             <p>&copy; 2025 TechBitz.io. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

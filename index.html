@@ -3,205 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBitz.io – Innovative Technology Solutions</title>
+    <title>TechBitz.io – Transform Ideas into Digital Masterpieces</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header and navigation -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">TechBitz<span>.io</span></a>
-            <nav id="main-nav" class="nav">
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-list">
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">TechBitz.io</a>
+            <nav id="nav">
+                <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div id="hamburger" class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     </header>
 
-    <!-- Hero slider: inspired by techvortex.ca -->
-    <section class="hero-slider">
-        <div class="slider">
-            <!-- Slide 1 -->
-            <div class="slide" style="--bg-color:#0077ff">
-                <div class="slide-content">
-                    <h1>HYBRID&nbsp;IT</h1>
-                    <p>Helping understand the potential of technology.</p>
-                    <a href="services.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide" style="--bg-color:#00aaff">
-                <div class="slide-content">
-                    <h1>MAKING&nbsp;SENSE&nbsp;OF&nbsp;CLOUD</h1>
-                    <p>Navigate the complexity of the cloud with our experts.</p>
-                    <a href="services.html#web-dev" class="btn btn-primary">Our Cloud Services</a>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide" style="--bg-color:#ff6600">
-                <div class="slide-content">
-                    <h1>LATEST&nbsp;TECHNOLOGY</h1>
-                    <p>Stay ahead with cutting‑edge tech solutions.</p>
-                    <a href="blog.html" class="btn btn-primary">Read Insights</a>
-                </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="slide" style="--bg-color:#28a745">
-                <div class="slide-content">
-                    <h1>PRINT&nbsp;YOUR&nbsp;NEEDS</h1>
-                    <p>Discover custom printing and hardware solutions.</p>
-                    <a href="services.html#automation" class="btn btn-primary">Explore Solutions</a>
-                </div>
-            </div>
-            <!-- Slide 5 -->
-            <div class="slide" style="--bg-color:#6f42c1">
-                <div class="slide-content">
-                    <h1>VAULT&nbsp;UP&nbsp;THE&nbsp;DATA</h1>
-                    <p>Secure and scalable data storage solutions.</p>
-                    <a href="services.html#testing" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Freelance Tech Partner</h1>
+            <p>Welcome to TechBitz.io, where we provide expert freelance technology services with a personal touch.</p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
         </div>
     </section>
 
-    <!-- Why us section: adapted from TechVortex -->
-    <section class="features">
-        <div class="container">
-            <h2>Why&nbsp;Choose&nbsp;TechBitz?</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">👩‍💼</div>
-                    <h3>Dedicated Experts</h3>
-                    <p>Our subject matter experts understand your business and guide you from strategy through execution.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🛒</div>
-                    <h3>One‑Stop Shop</h3>
-                    <p>Access an extensive catalogue of technology products and services for a convenient one‑stop experience.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🔗</div>
-                    <h3>Strategic Sourcing</h3>
-                    <p>We partner with leading manufacturers and distributors to offer optimal lead times and cost savings.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Customer Success</h3>
-                    <p>We equip leaders with insights and tools to achieve their mission‑critical priorities and build the organizations of tomorrow.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services preview -->
-    <section class="services-preview">
+    <!-- Services Section -->
+    <section class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="services-grid">
+            <p class="section-subtitle">Focused on increasing your revenue through our talent. Create a powerful presence, generate leads and let the data guide you to the opportunities.</p>
+            <div class="service-cards">
                 <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Custom websites and web applications built with modern frameworks, responsive design and accessibility in mind.</p>
-                    <a href="services.html#web-dev" class="btn btn-secondary">Learn More</a>
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Design</h3>
+                    <p>From sleek landing pages to complex web platforms, we craft digital experiences that engage and convert.</p>
                 </div>
                 <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automation & Testing</h3>
+                    <p>Leverage AI and automated testing to deliver reliable, scalable systems that accelerate your time to market.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-sync-alt"></i>
                     <h3>Workflow Automation</h3>
-                    <p>Streamline repetitive tasks with intelligent automation using integration platforms like Zapier and custom scripts.</p>
-                    <a href="services.html#automation" class="btn btn-secondary">Learn More</a>
+                    <p>Streamline your processes, integrate tools and free up your team to focus on what matters most.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Testing & QA</h3>
-                    <p>Ensure quality and reliability through automated testing pipelines and comprehensive QA strategies.</p>
-                    <a href="services.html#testing" class="btn btn-secondary">Learn More</a>
-                </div>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Blog preview -->
-    <section class="blog-preview">
+    <!-- About / Intro Section -->
+    <section id="about" class="about-intro">
         <div class="container">
-            <h2>Latest Insights</h2>
-            <p class="subtitle">Stay up‑to‑date with our articles on technology trends, best practices and case studies.</p>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <h3><a href="blog.html#post1">Boosting Performance with Responsive Design</a></h3>
-                    <p>Learn why responsive web design is essential for modern websites and how it improves user experience and conversions.</p>
-                    <span class="date">September 20, 2025</span>
-                </div>
-                <div class="blog-card">
-                    <h3><a href="blog.html#post2">Automating Your Workflow: A Step-by-Step Guide</a></h3>
-                    <p>Discover how automation can save time and increase productivity by automating repetitive tasks.</p>
-                    <span class="date">August 15, 2025</span>
-                </div>
-                <div class="blog-card">
-                    <h3><a href="blog.html#post3">Ensuring Quality with Automated Testing</a></h3>
-                    <p>Explore testing strategies that keep your applications robust and reliable throughout the development lifecycle.</p>
-                    <span class="date">July 30, 2025</span>
-                </div>
-            </div>
-            <a href="blog.html" class="btn btn-secondary">View All Posts</a>
+            <h2>About TechBitz.io</h2>
+            <p class="section-subtitle">We specialize in delivering high‑quality solutions in programming, software testing, automation, project management and product ownership.</p>
+            <p>As a trusted partner, we combine technical excellence with reliability, helping businesses innovate and grow in a fast‑paced digital world. We especially love guiding startups through the tech landscape, turning great ideas into successful products.</p>
+            <p>With a proven track record on Upwork – including Top Rated Plus status, a 100&nbsp;% Job Success score and over 1,800 hours logged on projects for clients worldwide – TechBitz.io is a partner you can trust. We work with clients across the US and Europe, bringing a global perspective and adapting to your time zone for seamless remote collaboration.</p>
+            <p>Ready to build something great together? Contact us today to discuss your project needs. TechBitz.io offers the flexibility of freelance talent with the professionalism of an established tech team – on standby to help you achieve your goals.</p>
         </div>
     </section>
 
-    <!-- Guarantees section -->
-    <section class="guarantees">
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2>Our&nbsp;Guarantees</h2>
-            <div class="guarantees-grid">
-                <div class="guarantee-item">
-                    <div class="guarantee-icon">⏰</div>
-                    <h3>24/7 Free Support</h3>
-                    <p>We’re here for you around the clock, ready to answer questions and provide assistance.</p>
+            <h2>Our Work</h2>
+            <p class="section-subtitle">A glimpse at some of our recent projects and experiments.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/portfolio1.png" alt="Web Design Project">
+                    <div class="portfolio-info">
+                        <h3>Modern Design</h3>
+                        <p>Clean layouts and user‑centric interfaces.</p>
+                    </div>
                 </div>
-                <div class="guarantee-item">
-                    <div class="guarantee-icon">💰</div>
-                    <h3>Low Price&nbsp;Guarantee</h3>
-                    <p>Get competitive pricing on our products and services without sacrificing quality.</p>
+                <div class="portfolio-item">
+                    <img src="images/portfolio2.png" alt="Automation Project">
+                    <div class="portfolio-info">
+                        <h3>Smart Automation</h3>
+                        <p>Automated workflows and testing frameworks.</p>
+                    </div>
                 </div>
-                <div class="guarantee-item">
-                    <div class="guarantee-icon">🛡️</div>
-                    <h3>Manufacturer’s&nbsp;Warranty</h3>
-                    <p>Enjoy peace of mind knowing that eligible products come with manufacturer warranties.</p>
-                </div>
-                <div class="guarantee-item">
-                    <div class="guarantee-icon">🔄</div>
-                    <h3>Full Refund</h3>
-                    <p>If you’re not satisfied, we offer hassle‑free refunds according to our return policy.</p>
+                <div class="portfolio-item">
+                    <img src="images/hero-bg.png" alt="Tech Illustrations">
+                    <div class="portfolio-info">
+                        <h3>Immersive Graphics</h3>
+                        <p>Captivating visuals and animations.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call-to-action -->
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>We kick off with understanding your goals, audience and brand personality.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design</h3>
+                    <p>We craft a bespoke design, blending aesthetics with usability and accessibility.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Development</h3>
+                    <p>We build with modern technologies, optimizing for performance and search engines.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Launch & Scale</h3>
+                    <p>We deploy to your preferred platform and support growth with analytics and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
     <section class="cta">
-        <div class="container cta-content">
-            <h2>Ready to transform your business?</h2>
-            <p>Get in touch with us today to discuss how we can help you achieve your goals through technology.</p>
-            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let’s build a website that not only meets today’s standards but sets tomorrow’s.</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-content">
+        <div class="container">
             <p>&copy; 2025 TechBitz.io. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="https://techbitz.io" target="_blank" rel="noopener">Visit Domain</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

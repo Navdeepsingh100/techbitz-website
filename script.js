@@ -1,39 +1,20 @@
-/*
- * JavaScript for TechBitz.io
- * Handles mobile navigation toggling and other interactive features.
- */
+// Mobile navigation toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navUl = document.querySelector('nav ul');
 
-document.addEventListener('DOMContentLoaded', function () {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navList = document.querySelector('.nav-list');
-
-    if (navToggle && navList) {
-        navToggle.addEventListener('click', function () {
-            navList.classList.toggle('show');
-            // Animate hamburger into X
-            navToggle.classList.toggle('open');
-        });
-    }
-
-    // Hero slider functionality
-    const slides = document.querySelectorAll('.slide');
-    if (slides.length > 0) {
-        let currentSlide = 0;
-        const showSlide = (index) => {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.classList.add('active');
-                } else {
-                    slide.classList.remove('active');
-                }
-            });
-        };
-        const nextSlide = () => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        };
-        showSlide(0);
-        // Cycle slides every 6 seconds
-        setInterval(nextSlide, 6000);
-    }
+    hamburger?.addEventListener('click', () => {
+        navUl?.classList.toggle('open');
+        hamburger.classList.toggle('open');
+    });
 });
+
+// Contact form handler
+function handleSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById('form-status');
+    status.textContent = 'Thank you for reaching out! We will get back to you soon.';
+    // Reset form fields
+    event.target.reset();
+    return false;
+}
